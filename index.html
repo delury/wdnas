@@ -1,196 +1,351 @@
-﻿
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Cloud Service - Synology</title>
-  <meta name="keywords" content="群晖,NAS,个人私有云" />
-  <meta name="description" content="群晖NAS——互联网+智慧办公的解决之道" />
-  <meta name="renderer" content="webkit" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="shortcut icon" href="image/icon_dsm_32.png?v=4398" sizes="32x32"/>
-  <link rel="stylesheet" href="css/layui.css" type="text/css" />
-  <link rel="stylesheet" href="css/public.css" type="text/css" />
-  <link rel="stylesheet" href="css/home.css" type="text/css">
-  <link rel="stylesheet" href="css/index.css" type="text/css">
-  <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script src="js/public.js"></script>
+  <title>搜索 - 全能搜索聚合</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" initial-scale="1" />
+  <meta name="Keywords" content="导航，搜索" />
+  <meta name="description" content="搜索平台，涵盖日常常用的各个功能。同时，加入了群晖相应模块。" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/so-min.css" rel="stylesheet" type="text/css" />
+  <link rel="Shortcut Icon" href="images/favicon.png" type="image/x-icon" />
 </head>
 
 <body>
-  <div class="page-top" style="height:990px">
-    <header>
-      <div class="layui-clear">
-        <a href="https://blog.ihe.ink/" target="_blank" class="logo">
-          <img src="image/logo.svg" width="135" height="40" >
-        </a>
-
-        <div class="time-winter">
-          <div class="time"></div>
-        </div>
+  <div class="mob">
+    <div class="mobbc">
+      <img src="images/logo.svg" class="logo" alt="logo" title="Synology群晖科技官网" />
+    </div>
+    <div class="search">
+      <form action="https://www.baidu.com/s" target="_blank" class="search" method="get">
+        <style type="text/css">
+          .bdsug_copy {
+            display: none
+          }
+        </style>
+        <input name="ie" type="hidden" value="utf-8">
+        <ul>
+          <li class="words"><input type="text" class="inputwords" id="inword" name="word" size="30" baiduSug="1" placeholder="随时百度一下"></li>
+          <li class="go"><input type="submit" class="gosearch" value="搜索" onMouseOver="this.style.opacity='1'" onMouseOut="this.style.opacity='0.9'"></li>
+        </ul>
+      </form>
+    </div>
+    <div class="tj">
+      <a href="https://m.qidian.com/">
+        <span><i class="fa fa-book" style="color: #FFA98E"></i></span>
+        <p>小说</p>
+      </a>
+      <a href="http://weixin.sogou.com/">
+        <span><i class="fa fa-weixin" style="color: #82DCBF"></i></span>
+        <p>微信</p>
+      </a>
+      <a href="http://zhihu.sogou.com/wap">
+        <span><i class="fa fa-mortar-board" style="color: #AFD6F5"></i></span>
+        <p>知乎</p>
+      </a>
+      <a href="https://xw.qq.com/">
+        <span><i class="fa fa-newspaper-o" style="color: #FFA98E"></i></span>
+        <p>新闻</p>
+      </a>
+      <a href="http://mingyi.sogou.com/?fr=common_index_nav">
+        <span><i class="fa fa-medkit" style="color: #AFD6F5"></i></span>
+        <p>明医</p>
+      </a>
+      <a href="http://fanyi.baidu.com/?aldtype=16047&tpltype=sigma">
+        <span><i class="fa fa-file-text-o" style="color: #FFA98E"></i></span>
+        <p>翻译</p>
+      </a>
+      <br /><br />
+      <a href="http://m.amap.com/nearby/index/">
+        <span><i class="fa fa-map-o" style="color: #82DCBF"></i></span>
+        <p>地图</p>
+      </a>
+      <a href="https://m.mafengwo.cn/">
+        <span><i class="fa fa-send" style="color: #AFD6F5"></i></span>
+        <p>旅行</p>
+      </a>
+      <a href="https://s.weibo.com/top/summary?cate=realtimehot">
+        <span><i class="fa fa-weibo" style="color: #FFA98E"></i></span>
+        <p>微博</p>
+      </a>
+      <a href="http://www.polayoutu.com/collections">
+        <span><i class="fa fa-photo" style="color: #AFD6F5"></i></span>
+        <p>图片</p>
+      </a>
+      <a href="https://pic.sogou.com/pic/emo/index.jsp">
+        <span><i class="fa fa-smile-o" style="color: #82DCBF"></i></span>
+        <p>表情</p>
+      </a>
+      <a href="http://hao.uc.cn">
+        <span><i class="fa fa-internet-explorer" style="color: #AFD6F5"></i></span>
+        <p>UC</p>
+      </a>
+      <br /><br />
+      <!--群晖-->
+      <a href="wdnas.190301.xyz:5000">
+        <span><img src="images/dsm.png" height="23px"></span>
+        <p>Login</p>
+      </a>
+      <a href="wdnas.190301.xyz:5000">
+        <span><img src="images/file.png" height="23px"></span>
+        <p>File</p>
+      </a>
+      <a href="wdnas.190301.xyz:5000">
+        <span><img src="images/down.png" height="23px"></span>
+        <p>Down</p>
+      </a>
+      <a href="wdnas.190301.xyz:5000">
+        <span><img src="images/drive.png" height="23px"></span>
+        <p>Drive</p>
+      </a>
+      <a href="wdnas.190301.xyz:5000">
+        <span><img src="images/moments.png" height="23px"></span>
+        <p>Moments</p>
+      </a>
+      <a href="wdnas.190301.xyz:5000">
+        <span><img src="images/kod.png" height="23px"></span>
+        <p>Kod</p>
+      </a>
+ 
+      <!--群晖-->
+    </div>
+    <div class="tu"></div>
+  </div>
+  <div class="tq">
+    <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=ta&skin=orange" frameborder="0" width="400" height="24" allowtransparency="true"></iframe>
+  </div>
+  <div class="top"></div>
+  <div class="logos">
+    <a href="https://blog.ihe.ink/" target="_blank">
+      <img src="images/logo.svg" title="Synology群晖科技官网">
+    </a>
+  </div>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon">搜索</span>
+        <form action="https://www.baidu.com/s" method="get" target="_blank">
+          <input type="text" class="form-control" name="search" id="search" placeholder="输入关键词，点击下方按钮即可搜索" baiduSug="1" value=" " autofocus="autofocus" />
       </div>
-    </header>
-
-    <div class="wrap">
-      <div class="head">
-        <div class="head_logo_so">
-          <div class="head_logo_h1">
-            <div class="head_h1">
-              <h1>百度一下 · 你就知道</h1>
-            </div>
-          </div>
-          <div class="head_soso">
-            <form action="https://www.baidu.com/s" target="_blank">
-              <div class="container">
-                <div class="search">
-                  <meta name="wlhlauth" content="96208c148e8789e0a974d2efa6cf938d" />
-                  <input type="text" id="txt" placeholder="输入关键字搜索" name="wd">
-                </div>
-              </div>
-              <button class="submit" type="submit">百度一下</button>
-          </div>
-        </div>
-        <div class="head_new_gj">
-
-          <div class="zhanbang">
-            <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=ty&amp;skin=durian" frameborder="0" width="270" height="100" allowtransparency="true" style="padding: 20px 0px 0px 40px;"></iframe>
-          </div>
-          <!--修改成你自己的地址-->
-          <div class="gongju">
-            <div class="gongju_title">Synology App</div>
-            <div class="xiaogongju">
-              <div class="ihucms_icon"><img src="image/icon_dsm_32.png">
-                <a href="#/" target="_blank">Login Synology</a></div>
-              <div class="ihucms_icon"><img src="image/file.png">
-                <a href="#/file/" target="_blank">File Station</a></div>
-              <div class="ihucms_icon"><img src="image/down.png">
-                <a href="#/down/" target="_blank">Download Station</a></div>
-              <div class="ihucms_icon"><img src="image/drive.png">
-                <a href="#/drive/" target="_blank">Drive</a></div>
-              <div class="ihucms_icon"><img src="image/moments.png">
-                <a href="#/moments/" target="_blank">Moments</a></div>
-              <div class="ihucms_icon"><img src="image/video.png">
-                <a href="#/video/" target="_blank">Video Station</a></div>
-              <div class="ihucms_icon"><img src="image/audio.png">
-                <a href="#/audio/" target="_blank">Audio Station</a></div>
-              <div class="ihucms_icon"><img src="image/note.png">
-                <a href="#/note/" target="_blank">Note Station</a></div>
-              <div class="ihucms_icon"><img src="image/calendar.png">
-                <a href="#/calendar/" target="_blank">Calendar</a></div>
-            </div>
-            <!--修改成你自己的地址-->
-          </div>
-        </div>
-      </div>
+      <P>
+        <center>
+          <input type="submit" value="百度" id="baidu" button type="button" class="btn btn-success" />
+          <input type="submit" value="搜狗" id="sougou" button type="button" class="btn btn-success" />
+          <input type="submit" value="必应" id="bing" button type="button" class="btn btn-success" />
+          <input type="submit" value="谷歌" id="google" button type="button" class="btn btn-success" />
+          <input type="submit" value="学术" id="study" button type="button" class="btn btn-success" />
+          <input type="submit" value="翻译" id="fanyi" button type="button" class="btn btn-success" />
+          <input type="submit" value="京东" id="jd" button type="button" class="btn btn-warning" />
+          <input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-warning" />
+          <input type="submit" value="微信" id="weixin" button type="button" class="btn btn-success" />
+          <input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-success" />
+          <input type="submit" value="微博" id="weibo" button type="button" class="btn btn-success" />
+          <input type="submit" value="美图" id="meitu" button type="button" class="btn btn-info" />
+          <input type="submit" value="网盘" id="pan" button type="button" class="btn btn-info" />
+          <input type="submit" value="影视" id="movie" button type="button" class="btn btn-info" />
+          <input type="submit" value="音乐" id="music" button type="button" class="btn btn-info" />
+        </center>
+      </P>
+      <P>
+        <center>
+          <span class="btn btn-success"><a href="#/" target="_blank" title="登入">Login</a></span>
+          <span class="btn btn-success"><a href="#/" target="_blank" title="文件">File</a></span>
+          <span class="btn btn-success"><a href="#/" target="_blank" title="下载">Down</a></span>
+          <span class="btn btn-success"><a href="#/" target="_blank" title="云盘">Drive</a></span>
+          <span class="btn btn-success"><a href="#/" target="_blank" title="图库">Moments</a></span>
+          <span class="btn btn-success"><a href="#/" target="_blank" title="影院">Video</a></span>
+        </center>
+      </P>
+      </form>
     </div>
   </div>
-  <!--头部搜索-->
-  <article>
-    <div class="count">
-      <div class="count-title">
-        <i class="layui-icon layui-icon-chart"></i>温馨提示：</div>
-      <ul class="tj-list">
-        <li>
-          <script type="text/javascript">
-            var now = (new Date()).getHours();
-            if (now > 0 && now <= 6) {
-              document.write("午夜好少年，快睡觉去，你亲爱的等久了会不耐烦的哦...");
-            } else if (now > 6 && now <= 11) {
-              document.write("早上好少年，昨夜运动那么长时间还这么早起床，真汉子...");
-            } else if (now > 11 && now <= 14) {
-              document.write("中午好少年，停下手中的工作，快去吃饭晚了就没的吃了...");
-            } else if (now > 14 && now <= 18) {
-              document.write("下午好少年，累了一上午了，快去休息会喝杯咖啡...");
-            } else {
-              document.write("晚上好少年，快睡觉吧别忙了，明天的太阳一样红...");
-            }
-          </script>
-        </li>
-      </ul>
-    </div>
-  </article>
-
-  <!--底部导航-->
   <footer>
-    <div>
-      <!--
-        <ul class="layui-clear">
-            <li><a href="#">关于我们</a></li>
-            <li><a href="#">广告合作</a></li>
-            <li><a href="#">申请收录</a></li>
-            <li><a href="#')}">帮助中心</a></li>
-            <li><a href="#">网站地图</a></li>
-        </ul>
-      -->
-
-      <p class="copart">
-        <a href="https://blog.ihe.ink/" target="_blank">
-          <img width="135" height="40" border="0" alt="群晖正版授权" src="image/logo_gray.svg">
-        </a>
-      </p>
-      <p class="copart">
-        Copyright © 2019 All rights Reserved.<!--沪ICP备15015915号<img src="image/police.png">-->
-      </p>
+    <div class="copyright">
+      <div class="ewm"></div>
+      <p class="dsc">手机版</p>
+      <p>推荐：<a href="https://so.byr.wiki/" target="_blank" title="北邮人网址导航">北邮人</a> - <a href="http://guozhivip.com/nav/" target="_blank" title="果汁导航">果汁</a> - <a href="http://rain.xxoojoke.com" target="_blank" title="厅雨--The way we relax">厅雨</a> - <a
+          href="https://www.synology.cn/" target="_blank" title="Synology群晖科技官网">群晖</a></p>
+      <span>Copyright © 2019 <a href="https://blog.ihe.ink/" title="Fresh Uncle Blog">FU</a> All Rights Reserved.</span>
     </div>
   </footer>
-  <a class="backtop layui-icon layui-icon-top" style="display: none;"></a>
-  <!--底部导航-->
+  <script src="css/jquery-3.1.0.min.js"></script>
+  <script src="css/jquery-migrate-3.0.0.min.js"></script>
+  <script src="css/jquery.min.js"></script>
+  <script>
+    var sAddress = document.getElementsByTagName("form")[1];
+    var sInfor = document.getElementById("search");
+    var sBaidu = document.getElementById("baidu");
+    var sSougou = document.getElementById("sougou");
+    var sBing = document.getElementById("bing");
+    var sGoogle = document.getElementById("google");
+    var sStudy = document.getElementById("study");
+    var sFanyi = document.getElementById("fanyi");
+    var sJd = document.getElementById("jd");
+    var sTaobao = document.getElementById("taobao");
+    var sWeixin = document.getElementById("weixin");
+    var sZhihu = document.getElementById("zhihu");
+    var sWeibo = document.getElementById("weibo");
+    var sMeitu = document.getElementById("meitu");
+    var sPan = document.getElementById("pan");
+    var sMovie = document.getElementById("movie");
+    var sMusic = document.getElementById("music");
 
-  <script type="text/javascript">
+    //百度
+    sBaidu.onclick = function() {
+      sAddress.action = "https://www.baidu.com/s";
+      sInfor.name = "wd";
+    }
+    //搜狗
+    $('#sougou').click(function() {
+      var query = $('#search').val();
+      if (query) {
+        window.open("https://www.sogou.com/web?query=" + query, "_blank");
+        return false;
+      };
+    });
+    //必应
+    sBing.onclick = function() {
+      sAddress.action = "https://cn.bing.com/search";
+      sInfor.name = "q";
+    };
+    //谷歌
+    sGoogle.onclick = function() {
+      sAddress.action = "https://www.google.com/search";
+      sInfor.name = "q";
+    };
+    //学术
+    sStudy.onclick = function() {
+      sAddress.action = "http://xueshu.baidu.com/s";
+      sInfor.name = "wd";
+    };
+    //翻译
+    $('#fanyi').click(function() {
+      var query = $('#search').val();
+      if (query) {
+        window.open("https://cn.bing.com/dict/search?q=" + query, "_blank");
+        return false;
+      };
+    });
+    //京东
+    $('#jd').click(function() {
+      var query = $('#search').val();
+      if (query) {
+        window.open("https://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+        return false;
+      };
+    });
+    //淘宝
+    sTaobao.onclick = function() {
+      sAddress.action = "https://s.taobao.com/search?";
+      sInfor.name = "q";
+    }
+    //微信
+    $('#weixin').click(function() {
+      var query = $('#search').val();
+      if (query) {
+        window.open("https://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
+        return false;
+      };
+    });
+    //知乎
+    sZhihu.onclick = function() {
+      sAddress.action = "https://www.zhihu.com/search";
+      sInfor.name = "q";
+      sInfor.type = "question";
+    }
+    //微博
+    $('#weibo').click(function() {
+      var query = $('#search').val();
+      if (query) {
+        window.open("https://s.weibo.com/weibo/" + query, "_blank");
+        return false;
+      };
+    });
+    //美图
+    sMeitu.onclick = function() {
+      sAddress.action = "https://huaban.com/search?q=";
+      sInfor.name = "q";
+    }
+    //网盘
+    $('#pan').click(function() {
+      var query = $('#search').val();
+      if (query) {
+        window.open("http://www.pansou.com/?q=" + query + "&page=1", "_blank");
+        return false;
+
+      };
+    });
+    //影视
+    $('#movie').click(function() {
+      var query = $('#search').val();
+      if (query) {
+        window.open("http://ifkdy.com/?q=" + query + "&p=1", "_blank");
+        return false;
+
+      };
+    });
+    //音乐
+    $('#music').click(function() {
+      var query = $('#search').val();
+      if (query) {
+        window.open("https://www.xiami.com/search?key=" + query + " ", "_blank");
+        return false;
+
+      };
+    });
+  </script>
+  <!--屏蔽F12-->
+  <script>
+    document.oncontextmenu = function(event) {
+      if (window.event) {
+        event = window.event;
+      }
+      try {
+        var the = event.srcElement;
+        if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+          return false;
+        }
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+  </script>
+  <script>
+    document.onkeydown = function() {
+
+      if (window.event && window.event.keyCode == 123) {
+        alert("Hi,欢迎来到全能搜索！");
+        event.keyCode = 0;
+        event.returnValue = false;
+      }
+      if (window.event && window.event.keyCode == 13) {
+        window.event.keyCode = 505;
+      }
+      if (window.event && window.event.keyCode == 8) {
+        alert(str + "\n请使用Del键进行字符的删除操作！");
+        window.event.returnValue = false;
+      }
+    }
+  </script>
+  <script>
+    var _hmt = _hmt || [];
     (function() {
-      var tab_tit = document.getElementById('think_page_trace_tab_tit').getElementsByTagName('span');
-      var tab_cont = document.getElementById('think_page_trace_tab_cont').getElementsByTagName('div');
-      var open = document.getElementById('think_page_trace_open');
-      var close = document.getElementById('think_page_trace_close').children[0];
-      var trace = document.getElementById('think_page_trace_tab');
-      var cookie = document.cookie.match(/thinkphp_show_page_trace=(\d\|\d)/);
-      var history = (cookie && typeof cookie[1] != 'undefined' && cookie[1].split('|')) || [0, 0];
-      open.onclick = function() {
-        trace.style.display = 'block';
-        this.style.display = 'none';
-        close.parentNode.style.display = 'block';
-        history[0] = 1;
-        document.cookie = 'thinkphp_show_page_trace=' + history.join('|')
-      }
-      close.onclick = function() {
-        trace.style.display = 'none';
-        this.parentNode.style.display = 'none';
-        open.style.display = 'block';
-        history[0] = 0;
-        document.cookie = 'thinkphp_show_page_trace=' + history.join('|')
-      }
-      for (var i = 0; i < tab_tit.length; i++) {
-        tab_tit[i].onclick = (function(i) {
-          return function() {
-            for (var j = 0; j < tab_cont.length; j++) {
-              tab_cont[j].style.display = 'none';
-              tab_tit[j].style.color = '#999';
-            }
-            tab_cont[i].style.display = 'block';
-            tab_tit[i].style.color = '#000';
-            history[1] = i;
-            document.cookie = 'thinkphp_show_page_trace=' + history.join('|')
-          }
-        })(i)
-      }
-      parseInt(history[0]) && open.click();
-      tab_tit[history[1]].click();
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?01eb2617551fd352c78b7668f7ee9c24";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
     })();
   </script>
+
+
 </body>
 
 <!--统计-->
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?01eb2617551fd352c78b7668f7ee9c24";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-<!--统计-->
+<script type="text/javascript" src="https://js.users.51.la/20476119.js"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=66489220" charset="UTF-8"></script>
 
 </html>

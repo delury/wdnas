@@ -1,0 +1,291 @@
+/**
+ * 致敬北邮人导航 https://byr.wiki/
+ * 致敬果汁导航 http://guozhivip.com/nav/
+ * 修改 FreshUncle
+ * 博客 https://blog.ihe.ink/
+ * 云盘 https://y.ihe.ink/
+ * 日期 2019.11.18
+ * 版本 v1.0
+ **/
+
+body, button, div, form, input, li, table, td, tr, ul {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none
+}
+
+body {
+  font-family: Microsoft YaHei;
+  background: url(../images/background.jpg);
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none
+}
+
+.mob {
+  display: none
+}
+
+.top {
+  width: 100%;
+  height: 0;
+  background-color: #f30
+}
+
+.logos {
+  margin: 0 auto;
+  margin-top: 110px;
+  width: 200px;
+  height: 150px
+}
+
+.logos img {
+  width: 100%;
+  height: 100%
+}
+
+.tq {
+  margin: 10px 10px 0 10px;
+  color: #ccc
+}
+
+.jumbotron {
+  margin-top: -45px;
+  background-color: #fff
+}
+
+.jumbotron .input-group-addon {
+  border: 1px solid #3f3f3f;
+  border-radius: 2px 0 0 2px;
+  background-color: #3f3f3f;
+  color: #fff
+}
+
+#search {
+  border: 1px solid #bbb;
+  border-left: 0;
+  border-radius: 0 2px 2px 0;
+  background-color: #fff;
+  color: #222
+}
+
+.container .btn {
+  outline: 0;
+  border-radius: 2px;
+  transition: .25s
+}
+
+.container .btn:active {
+  outline: 0
+}
+
+.container .btn-success {
+  border: 1px solid #616161;
+  background-color: #616161
+}
+
+.container .btn-default {
+  border: 1px solid #888;
+  background-color: #888;
+  color: #fff
+}
+
+.container .btn-warning {
+  border: 1px solid #616161;
+  background-color: #616161
+}
+
+.container .btn-danger {
+  border: 1px solid #888;
+  background-color: #888
+}
+
+.container .btn-info {
+  border: 1px solid #616161;
+  background-color: #616161
+}
+
+.container .btn:hover {
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  color: #111
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 100%;
+  background: #fff;
+  color: #999;
+  text-align: center;
+  font-size: 13px;
+  font-family: Microsoft YaHei
+}
+
+.copyright .ewm {
+  margin: 0 auto;
+  margin-bottom: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../images/QRcode.png);
+  background-size: cover
+}
+
+.copyright span {
+  margin: 0 .5em
+}
+
+.copyright a {
+  color: #999;
+  text-decoration: none
+}
+
+.copyright a:hover {
+  text-decoration: underline
+}
+
+@media only screen and (max-width:420px) {
+  body {
+    min-width: 200px;
+    background-color: #fff
+  }
+
+  .top {
+    display: none
+  }
+
+  .tq {
+    display: none
+  }
+
+  .logos {
+    display: none
+  }
+
+  .jumbotron {
+    display: none
+  }
+
+  .mob {
+    display: block;
+    background-color: #fff;
+  }
+
+  .mob .mobbc {
+    width: 100%;
+    height: 210px;
+    background: #555 url(../images/wallpaper.jpg) no-repeat;
+    background-size: cover
+  }
+
+  .mob .mobbc .logo {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 100px;
+    height: auto
+  }
+
+  .mob .search ul {
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: -24px;
+    margin-bottom: 25px;
+    width: 98%;
+    height: 48px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .12)
+  }
+
+  .mob .search ul li {
+    float: left
+  }
+
+  .mob .search ul li.words {
+    width: 85%
+  }
+
+  .mob .search ul li.go {
+    width: 15%
+  }
+
+  .mob .search ul li .inputwords {
+    width: 100%;
+    height: 48px;
+    text-indent: 8px
+  }
+
+  .mob .search ul li .gosearch {
+    width: 100%;
+    height: 48px;
+    background-color: #3f3f3f;
+    color: #fff
+  }
+
+  .mob .tj {
+    display: table;
+    width: 100%
+  }
+
+  .mob .tj a {
+    position: relative;
+    display: inline-block;
+    width: 16.66666%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px
+  }
+
+  .mob .tj span {
+    display: block;
+    margin: 0 auto 1px
+  }
+
+  .mob .tj span i {
+    font-size: 23px
+  }
+
+  .mob .tj p {
+    display: block;
+    color: #666;
+    -webkit-margin-before: .8em;
+    -webkit-margin-after: .8em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0
+  }
+
+  .mob .tu {
+    margin: 0;
+    width: 100%;
+    height: 230px;
+    background: #ccc url(../images/wallpaper2.jpg) no-repeat;
+    background-size: cover
+  }
+
+  .copyright {
+    position: relative;
+    padding: 12px 0;
+    color: #bbb
+  }
+
+  .copyright a {
+    color: #bbb;
+    text-decoration: none
+  }
+
+  .copyright .ewm {
+    display: none
+  }
+
+  .copyright .dsc {
+    display: none
+  }
+}
